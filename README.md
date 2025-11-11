@@ -194,4 +194,4 @@ MIT - See [LICENSE](LICENSE) for details.
 
 Inspired by [Hydra](https://hydra.cc/) by Facebook Research.
 
-Built and maintained by [Supernal Technologies](https://github.com/supernalintelligence).
+Built and maintained by [Supernal Intelligence](https://www.supernal.ai).
