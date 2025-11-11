@@ -8,4 +8,4 @@ project:
   name: 'composed-app'
 
 database:
-  host: 'prod-db.example.com'  # Override
+  host: 'prod-db.example.com' # Override
