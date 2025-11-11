@@ -1,0 +1,9 @@
+# PostgreSQL database pattern
+database:
+  type: 'postgres'
+  host: 'localhost'
+  port: 5432
+  ssl: true
+  pool:
+    min: 2
+    max: 10

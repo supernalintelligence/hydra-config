@@ -1,0 +1,63 @@
+{
+  "name": "@supernal/hydra-config",
+  "version": "1.0.0",
+  "description": "Hydra-style hierarchical YAML configuration with composition, patterns, and deep merge",
+  "keywords": [
+    "config",
+    "configuration",
+    "yaml",
+    "hydra",
+    "composition",
+    "patterns",
+    "hierarchical",
+    "merge",
+    "defaults",
+    "settings"
+  ],
+  "author": "Supernal Technologies",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/supernalintelligence/hydra-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/supernalintelligence/hydra-config/issues"
+  },
+  "homepage": "https://github.com/supernalintelligence/hydra-config",
+  "main": "src/index.js",
+  "files": [
+    "src/",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "dependencies": {
+    "yaml": "^2.8.1",
+    "fs-extra": "^11.3.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "eslint": "^8.56.0"
+  },
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint src/",
+    "lint:fix": "eslint src/ --fix",
+    "prepublishOnly": "npm test && npm run lint"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coverageDirectory": "coverage",
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ],
+    "testMatch": [
+      "**/test/**/*.test.js"
+    ]
+  }
+}

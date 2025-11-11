@@ -1,0 +1,12 @@
+# Development
+test/
+examples/
+.github/
+coverage/
+
+# Config
+.eslintrc.js
+jest.config.js
+
+# Docs
+*.test.js

@@ -1,0 +1,12 @@
+# Basic configuration example
+project:
+  name: 'basic-app'
+  version: '1.0.0'
+
+server:
+  host: 'localhost'
+  port: 3000
+
+database:
+  type: 'sqlite'
+  path: './data.db'

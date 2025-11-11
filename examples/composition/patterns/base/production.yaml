@@ -1,0 +1,9 @@
+# Base configuration pattern
+server:
+  host: 'localhost'
+  port: 3000
+  timeout: 30000
+
+logging:
+  level: 'info'
+  format: 'json'

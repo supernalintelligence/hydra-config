@@ -1,0 +1,11 @@
+# Composition example
+defaults:
+  - base: production
+  - database: postgres
+  - _self_
+
+project:
+  name: 'composed-app'
+
+database:
+  host: 'prod-db.example.com'  # Override

@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+package-lock.json
+npm-debug.log*
+
+# Testing
+coverage/
+*.test.js.snap
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build
+dist/
+build/
