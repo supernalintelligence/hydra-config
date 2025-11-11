@@ -1,0 +1,6 @@
+version: "3.0.0"
+workflow: minimal
+invalid yaml here:
+  - no proper indentation
+ broken: structure
+

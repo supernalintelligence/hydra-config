@@ -2,7 +2,7 @@ const {
   YAMLSyntaxError,
   PatternNotFoundError,
   CircularDependencyError,
-} = require('../../../supernal-code-package/lib/config');
+} = require('../src');
 
 describe('Error Classes', () => {
   describe('YAMLSyntaxError', () => {

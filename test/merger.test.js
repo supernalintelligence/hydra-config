@@ -1,4 +1,4 @@
-const { ConfigMerger } = require('../../../supernal-code-package/lib/config');
+const { ConfigMerger } = require('../src');
 
 describe('ConfigMerger', () => {
   let merger;

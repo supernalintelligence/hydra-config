@@ -1,0 +1,7 @@
+version: '3.0.0'
+defaults:
+  - minimal
+  - _self_
+
+project:
+  name: test-project

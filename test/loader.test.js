@@ -4,14 +4,17 @@ const {
   ConfigLoader,
   YAMLSyntaxError,
   PatternNotFoundError,
-} = require('../../../supernal-code-package/lib/config');
+} = require('../src');
 
 describe('ConfigLoader', () => {
   let loader;
-  const fixturesDir = path.join(__dirname, '../../fixtures/config');
+  const fixturesDir = path.join(__dirname, 'fixtures/config');
+  const patternsDir = path.join(__dirname, '..', 'src', 'patterns');
 
   beforeEach(() => {
-    loader = new ConfigLoader();
+    loader = new ConfigLoader({
+      searchPaths: [patternsDir],
+    });
   });
 
   afterEach(() => {
