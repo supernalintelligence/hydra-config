@@ -1,6 +1,6 @@
 {
   "name": "@supernal/hydra-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Hydra-style hierarchical YAML configuration with composition, patterns, and deep merge",
   "keywords": [
     "config",
