@@ -2,9 +2,10 @@
 
 Hydra-style hierarchical YAML configuration with composition, patterns, and deep merge for JavaScript.
 
-[![npm version](https://badge.fury.io/js/%40supernal%2Fhydra-config.svg)](https://www.npmjs.com/package/%40supernal%2Fhydra-config)
+[![npm version](https://img.shields.io/npm/v/@supernal/hydra-config.svg)](https://www.npmjs.com/package/@supernal/hydra-config)
+[![npm downloads](https://img.shields.io/npm/dm/@supernal/hydra-config.svg)](https://www.npmjs.com/package/@supernal/hydra-config)
 [![CI](https://github.com/supernalintelligence/hydra-config/workflows/CI/badge.svg)](https://github.com/supernalintelligence/hydra-config/actions)
-[![Coverage Status](https://coveralls.io/repos/github/supernalintelligence/hydra-config/badge.svg)](https://coveralls.io/github/supernalintelligence/hydra-config)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Why Hydra Config?
 
@@ -32,8 +33,8 @@ const { ConfigLoader } = require('@supernal/hydra-config');
 
 const loader = new ConfigLoader({
   searchPaths: [
-    './config/patterns',  // Your patterns
-    './node_modules/@supernal/hydra-config/patterns',  // Default patterns
+    './config/patterns', // Your patterns
+    './node_modules/@supernal/hydra-config/patterns', // Default patterns
   ],
 });
 
@@ -64,13 +65,13 @@ defaults:
   - base: production
   - database: postgres
   - cache: redis
-  - _self_  # Apply user overrides last
+  - _self_ # Apply user overrides last
 
 project:
-  name: 'my-app'  # Override from patterns
+  name: 'my-app' # Override from patterns
 
 database:
-  host: 'custom-host'  # Override specific values
+  host: 'custom-host' # Override specific values
 ```
 
 ### Pattern Files
@@ -98,6 +99,7 @@ const loader = new ConfigLoader(options);
 ```
 
 **Options:**
+
 - `searchPaths` (Array<string>): Directories to search for patterns
 - `cache` (Map): Optional cache instance
 
@@ -150,6 +152,7 @@ features:
 ### Pattern Search Paths
 
 Patterns are searched in order:
+
 1. User patterns (first in searchPaths)
 2. Shipped patterns (later in searchPaths)
 
@@ -174,12 +177,12 @@ See the [examples/](examples/) directory for complete working examples:
 
 ## Comparison to Other Solutions
 
-| Feature        | Hydra Config | config | convict | rc |
-| -------------- | ------------ | ------ | ------- | -- |
-| YAML Patterns  | ✅           | ❌     | ❌      | ❌ |
-| Composition    | ✅           | ❌     | ❌      | ❌ |
-| Deep Merge     | ✅           | ⚠️     | ❌      | ⚠️ |
-| Search Paths   | ✅           | ❌     | ❌      | ⚠️ |
+| Feature        | Hydra Config | config | convict | rc    |
+| -------------- | ------------ | ------ | ------- | ----- |
+| YAML Patterns  | ✅           | ❌     | ❌      | ❌    |
+| Composition    | ✅           | ❌     | ❌      | ❌    |
+| Deep Merge     | ✅           | ⚠️     | ❌      | ⚠️    |
+| Search Paths   | ✅           | ❌     | ❌      | ⚠️    |
 | Error Messages | ✅ Rich      | Basic  | Basic   | Basic |
 
 ## Contributing
