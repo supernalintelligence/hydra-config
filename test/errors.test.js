@@ -54,7 +54,7 @@ describe('Error Classes', () => {
       const error = new PatternNotFoundError('nonexistent', 'workflows', [
         'minimal',
         'agile-4',
-        'loopora-22',
+        'standard-flow',
       ]);
 
       expect(error.name).toBe('PatternNotFoundError');
@@ -62,14 +62,14 @@ describe('Error Classes', () => {
       expect(error.patternType).toBe('workflows');
       expect(error.message).toContain('minimal');
       expect(error.message).toContain('agile-4');
-      expect(error.message).toContain('loopora-22');
+      expect(error.message).toContain('standard-flow');
     });
 
     it('should suggest similar pattern names', () => {
       const error = new PatternNotFoundError('agile4', 'workflows', [
         'minimal',
         'agile-4',
-        'loopora-22',
+        'standard-flow',
       ]);
 
       expect(error.message).toContain('Did you mean "agile-4"?');

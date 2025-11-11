@@ -20,7 +20,7 @@ class PatternResolver {
 
   /**
    * Resolve pattern by name
-   * @param {string} patternName - e.g., "loopora-22-phase"
+   * @param {string} patternName - e.g., "standard-workflow"
    * @param {string} patternType - "workflows", "phases", "documents"
    * @returns {Promise<object>} Resolved pattern
    * @throws {PatternNotFoundError} If pattern not found
