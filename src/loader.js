@@ -1,11 +1,7 @@
 const yaml = require('js-yaml');
 const fs = require('fs-extra');
 const path = require('path');
-const {
-  YAMLSyntaxError,
-  PatternNotFoundError,
-  CircularDependencyError,
-} = require('./errors');
+const { YAMLSyntaxError } = require('./errors');
 
 /**
  * ConfigLoader - Main entry point for loading and resolving configurations
